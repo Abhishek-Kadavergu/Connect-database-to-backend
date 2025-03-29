@@ -91,6 +91,7 @@ app.delete("/api/products/:id", async (req, res) => {
   }
 });
 
+// Establish the connection
 const startServer = async () => {
   await connectToMongoDb();
   app.listen(PORT, () => {
